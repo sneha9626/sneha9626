@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Railway Reservation</title>
+<style>
+body{
+background-image:url('https://cdn.pixabay.com/photo/2018/10/19/12/14/train-3758523_960_720.jpg');
+background-size:cover;
+}</style>
+
+<script type="text/javascript">
+function validation()
+{
+if(document.f1.First name.value=="")
+{
+window.alert("Plz Enter Your First Name");
+return false;
+}
+else if(document.f1.Last name.value=="")
+{
+window.alert("Plz Enter Your Last Name");
+return false;
+}
+else if(document.f1.email.value=="")
+{
+window.alert("Plz Enter Your E-mail:");
+return false;
+}
+else if(document.f1.email.value.indexOf('@gmail.com')==-1)
+else if(document.f1.email.value.indexOf('@gmail.com')==-1)
+{
+window.alert("Plz Enter Your Valid E-mail");
+return false;
+}
+else if(document.f1.Phone no.value=="")
+{
+window.alert("Plz Enter Your Phone no");
+return false;
+}
+else if(document.f1.Age.value=="")
+{
+window.alert("Plz Enter Your Age:");
+return false;
+}
+else if(document.f1.From.value=="")
+{
+window.alert("Plz Enter Your From:");
+return false;
+}
+else if(document.f1.To.value=="")
+{
+window.alert("Plz Enter Your To:");
+return false;
+}
+else if(document.f1.No Of Ticket.value=="")
+{
+window.alert("Plz Enter Your No Of Ticket:");
+return false;
+}
+else if(document.f1.addr.value=="")
+{
+window.alert("Plz Enter Your Address");
+return false;
+}
+else if(document.f1.country.selectedIndex==0)
+{
+window.alert("Plz Select Your Country");
+return false;
+}
+else
+if((document.f1.rdo[0].checked==false)&&(document.f1.rdo[1].checked==false)&&(
+document.f1.rdo[2].checked==false))
+{
+window.alert("Plz Choose Your Gender");
+return false;
+}
+
+else if(document.f1.date.value=="")
+{
+window.alert("Plz Enter date:");
+return false;
+}
+
+else
+return true;
+
+}
+
+
+</script> </head>
+<body>
+
+<h3 style="text-align:center">Railway Reservation</h3>
+<form name="f1" action="Register.html" onsubmit="return validation()">
+<fieldset>
+<legend>Registration Form</legend> <br/>
+<table border="1">
+<tr> <td>First Name:</td> <td><input type="text" name="First name" size="31"></td> </tr>
+<tr> <td>Last Name:</td> <td><input type="text" name="Last name" size="31"></td> </tr>
+<tr> <td>E-mail:</td> <td><input type="text" name="email" size="31"></td> </tr>
+<tr> <td> Phone no:</td> <td><input type="text" name="Phone no" size="31"></td> </tr>
+<tr> <td>Age:</td> <td><input type="text" name="Age" size="31"></td> </tr>
+<tr> <td>From:</td> <td><input type="text" name="From" size="31"></td> </tr>
+<tr> <td>To:</td> <td><input type="text" name="To" size="31"></td> </tr>
+<tr> <td>No Of Ticket:</td> <td><input type="text" name="No Of Ticket" size="31"></td> </tr>
+<tr> <td>Address:</td> <td><Textarea name="addr" rows="5"
+cols="25"></Textarea></td> </tr>
+<tr>
+<td>Country:</td>
+<td> <select name="country">
+<option>---Select Your Country---</option>
+<option>India</option>
+<option>China</option>
+<option>Nepal</option>
+<option>Myanmmar</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Gender:</td>
+
+
+
+<td>
+<input type="radio" name="rdo">Male
+<input type="radio" name="rdo">Female <input type="radio"
+name="rdo">Transgender
+</td>
+</tr>
+<tr> <td>date</td> <td><input type="date" name="date" size="31"></td> </tr>
+</table> <br/>
+<input type="submit" value="Register"> </fieldset> </form> </body> </html>
